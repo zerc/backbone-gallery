@@ -1,0 +1,116 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Gallery example</title>
+
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/gallery.css" type="text/css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/underscore.js"></script>
+    <script type="text/javascript" src="../js/backbone.js"></script>
+    <script type="text/javascript" src="../js/backbone.gallery.js"></script>
+
+    <!-- Hardcoded :D -->
+    <style type="text/css">
+    #photo .photo__loader .photo__loader_animate {background-image:url('../i/ajax-loader.gif');}
+    #gallery_toolbar ins {background-image:url('../i/icons.gif')}
+    #gallery_controls div {background-image:url('../i/controls.png');}
+    #gallery_controls .disable ins {background-image:url('../i/icons_gray.gif');}
+    #gallery_image_loader {background-image:url('../i/loader_bg.png');}
+    #gallery_image_loader .animate {background-image:url('../i/ajax-loader.gif');}
+
+    .main_container {text-align:center;}
+    .main_container h1 {font-size:22px; line-height:1.5; padding-bottom:10px;}
+    </style>
+
+</head>
+<body>
+    <div class="main_container">
+        <h1>Gallery example</h1>
+        <div class="album__photos"></div>
+        <div class="copy">
+            I use <a href="http://eu.battle.net/d3/ru/media/" target="_blank">Diablo 3</a> and <a href="http://eu.battle.net/wow/ru/media/fanart/#/1" target="_blank">World of Warcraft</a> images for this demo.
+        </div>
+    </div>
+
+<script type="text/javascript">
+    $(function (){
+        var album = new Album({
+            'photos': [
+                {
+                    "hits": 0,
+                    "id": 0,
+                    "i_width": 1024,
+                    "i_height": 576,
+                    "image": "images/diablo3_1.jpg",
+                    "t_width": 120,
+                    "t_height": 68,
+                    "thumb": "images/diablo3_1-120x68.jpg"
+                },
+                {
+                    "hits": 0,
+                    "id": 1,
+                    "i_width": 1024,
+                    "i_height": 576,
+                    "image": "images/diablo3_2.jpg",
+                    "t_width": 120,
+                    "t_height": 68,
+                    "thumb": "images/diablo3_2-120x68.jpg"
+                },
+                {
+                    "hits": 0,
+                    "id": 2,
+                    "i_width": 1024,
+                    "i_height": 640,
+                    "image": "images/diablo3_3.jpg",
+                    "t_width": 120,
+                    "t_height": 75,
+                    "thumb": "images/diablo3_3-120x75.jpg"
+                },
+                {
+                    "hits": 0,
+                    "id": 3,
+                    "i_width": 452,
+                    "i_height": 900,
+                    "image": "images/diablo3_4.jpg",
+                    "t_width": 60,
+                    "t_height": 120,
+                    "thumb": "images/diablo3_4-60x120.jpg"
+                },
+                {
+                    "hits": 0,
+                    "id": 4,
+                    "i_width": 1024,
+                    "i_height": 576,
+                    "image": "images/diablo3_5.jpg",
+                    "t_width": 120,
+                    "t_height": 68,
+                    "thumb": "images/diablo3_5-120x68.jpg"
+                },
+                {
+                    "hits": 0,
+                    "id": 5,
+                    "i_width": 1024,
+                    "i_height": 616,
+                    "image": "images/wow_1.jpg",
+                    "t_width": 120,
+                    "t_height": 72,
+                    "thumb": "images/wow_1-120x72.jpg"
+                },
+                {
+                    "hits": 0,
+                    "id": 6,
+                    "i_width": 545,
+                    "i_height": 900,
+                    "image": "images/wow_2.jpg",
+                    "t_width": 73,
+                    "t_height": 120,
+                    "thumb": "images/wow_2-73x120.jpg"
+                },
+            ]
+        });
+    });
+</script>
+</body>
+</html>
