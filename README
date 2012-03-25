@@ -1,13 +1,16 @@
-# Simple gallery
+Simple gallery
+==============
 
 This is prototype of gallery using backbone framework.
 
-## How to use
+How to use
+----------
 
 Look into the index.html file for example :)
 
-## TODO
+TODO
+----
 
-* loader
-* categories
-* share widget
+- loader
+- categories
+- share widget
